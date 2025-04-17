@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 </html>
 <?php
 } else {
-    $db = new PDO('mysql:host=localhost;dbname=u68818', 'u68581', '4027467', [
+    $db = new PDO('mysql:host=localhost;dbname=u68581', 'u68581', '4027467', [
         PDO::ATTR_PERSISTENT => true,
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
     ]);

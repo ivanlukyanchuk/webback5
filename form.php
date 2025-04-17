@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Форма</title>
     <style>
-        body {
+                body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
         }
@@ -82,7 +82,7 @@
             font-size: 0.9em;
             margin-bottom: 10px;
         }
-
+        #messages { background: #d4edda; padding: 10px; border: 1px solid #c3e6cb; margin-bottom: 10px; }
     </style>
 </head>
 <body>
@@ -90,7 +90,7 @@
         <h2>Форма</h2>
 
         <?php
-															
+        // Вывод сообщений об ошибках
         if (!empty($messages)) {
             print('<div id="messages">');
             foreach ($messages as $message) {
